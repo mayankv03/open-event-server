@@ -1,0 +1,39 @@
+version: 2
+updates:
+- package-ecosystem: pip
+  directory: "/"
+  schedule:
+    interval: daily
+    time: "23:30"
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: pytype
+    versions:
+    - 2021.1.21
+    - 2021.1.28
+    - 2021.2.19
+    - 2021.2.23
+    - 2021.2.9
+    - 2021.3.10
+    - 2021.3.22
+    - 2021.3.3
+    - 2021.4.1
+    - 2021.4.15
+    - 2021.4.9
+  - dependency-name: marshmallow
+    versions:
+    - 3.10.0
+    - 3.11.0
+  - dependency-name: eventlet
+    versions:
+    - 0.30.0
+    - 0.30.1
+  - dependency-name: coverage
+    versions:
+    - "5.4"
+  - dependency-name: pytest
+    versions:
+    - 6.2.2
+  - dependency-name: isort
+    versions:
+    - 5.7.0
